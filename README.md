@@ -6,12 +6,16 @@
 
 ### Deployment
 ```
-sudo {yum/apt/dnf/zypper} yamllint -y
+sudo {yum|apt|dnf|zypper} yamllint -y
 cd ~/
 git clone https://github.com/Yggdroot/indentLine.git ~/.vim/pack/vendor/start/indentLine
 mv yamllint/ ~/.config/
 ```
 
 ### Results
+
+```
+vim {nginx|others}.yml 
+```
 
 ![Screenshot](img/indentline.png)
