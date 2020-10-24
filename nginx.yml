@@ -1,0 +1,18 @@
+---
+- hosts: webservers
+  vars:
+    http_port: 80
+    max_clients: 200
+  remote_user: root
+  tasks:
+    - name: Latest nginx version installed
+      yum:
+        name: nginx
+        state: latest
+    - name: Nginx enabled and running
+      service:
+        name: nginx
+        enabled: true
+        state: started
+
+
